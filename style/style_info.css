@@ -1,0 +1,95 @@
+.colum {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+}
+.colum::-webkit-scrollbar {
+    display: none;
+  }
+
+.colum img {
+    max-width: 300px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.solder {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solder p {
+    width: 300px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+.solder h2{
+    padding: 10px 0 0 0;
+}
+
+
+/* Домены */
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.window{
+    min-height: auto;
+    max-height: 100px;
+    width: 100%;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333333;
+    overflow-x: auto;
+    
+}
+.window::-webkit-scrollbar {
+    display: none;
+  }
+
+.sticker{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 270%;
+    margin-left: 10px;
+    width: 200px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.primer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
