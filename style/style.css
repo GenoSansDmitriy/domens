@@ -400,6 +400,9 @@ box-shadow: 2px 2px 5px black;
   min-width: 300px;
   padding-right: 10%;
 }
+.form-tvr h2{
+  padding-bottom: 10px;
+}
 .cancel_dom{
   width: 25px;
   height: 25px;
@@ -450,6 +453,7 @@ box-shadow: 2px 2px 5px black;
   background-color: #333333;
   color: whitesmoke;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 .form-sv button:hover{
   background-color: #5D5D5F;

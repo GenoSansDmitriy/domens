@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/style_info.css">
+
+</head>
+
+<body>
+  <!-- //голова// -->
+  <header>
+    <div class="triangle"></div>
+    <div class="logo">
+      <img src="../style/foto/logo.jpg" alt="" class="logo_img">
+    </div>
+    <nav class="basket_img">
+      <ul class="topmenu1">
+        <li><a class="submenu-link1">
+            <img src="../style/foto/list.svg" style="width: 50px;"></a>
+          <ul class="submenu1">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../domen.html">Домены</a></li>
+            <li><a href="info.html">О нас</a></li>
+            <li><a href="../index.html#anchor">Связаться с нами</a></li>
+            <li><a>
+                <div class="basket">
+                  <img src="../style/foto/person.svg" class="basket_img" onclick="openForm()">
+                </div>
+              </a></li>
+          </ul>
+      </ul>
+    </nav>
+    <div style="width: 0px;"></div>
+  </header>
+
+  <!-- Основа -->
+  <main>
+    
+    <div class="contain">
+        <h1>Контактная информация</h1>
+        <div class="address">Адрес:
+            <span>680042, г. Хабаровск, ул. Тихоокеанская, д.132, корпус 1</span>
+        </div>
+        <div class="number">Номера для связи:
+            <ul>
+            <li><a href="tel: 89241231212"> 8924 123 12 12</a></li>
+            <li><a href="tel: 88001231212">8800 123 12 12</a></li>
+            <li><a href="tel: 123123">123-123</a></li>
+            </ul>
+        </div>
+        <div class="mail">E-mail для связи:
+            <div>
+                <ul>
+                    <li><a href="mailto: xxx"> domens@gmail.com</a></li>
+                    <li><a href="mailto: xxx">genosans.dem@mail.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Форма регистрации -->
+    <div class="form-popup" id="myForm">
+      <form action="#" class="form-container">
+        <label for="email"><b>Почта</b></label>
+        <input type="text" placeholder="Ваша почта" name="email" required>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Ваш пароль" name="psw" required>
+        <button class="btn">Вход</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- //подвал// -->
+  <footer>
+    <nav class="footer_menu">
+      <ul class="topmenu">
+        <li><a class="submenu-link">О НАС</a>
+          <ul class="submenu">
+            <li><a href="../info/contact.html">Контакты</a></li>
+            <li><a href="https://t.me/+xC-sAi9WhUllZjUy" target="_blank">Наши социальные сети</a></li>
+            <li><a href="info.html">О нас</a></li>
+          </ul>
+      </ul>
+    </nav><br>
+    <div class="menu_pay_foot">
+      <a href="https://www.visa.com.ru/visa-russia-notice.html"> <img src="../style/foto/visa.png" class="pay_foot"></a>
+      <a href="https://yoomoney.ru/"> <img src="../style/foto/Ymoney.png" class="pay_foot"></a>
+      <a href="http://www.sberbank.ru/"> <img src="../style/foto/sber.png" class="pay_foot"></a>
+      <a href="https://qiwi.com/"> <img src="../style/foto/qiwi.png" class="pay_foot"></a>
+      <button class="button_pay_foot"><b> Способы <br> оплаты</b></button>
+    </div>
+    <br>
+    <p style="font-size: 16px; color: whitesmoke;">
+      Наш адрес: 680042, г. Хабаровск, ул. Тихоокеанская, д.132, корпус 1
+      <br><br>
+      Адрес для корреспонденции: 123456, г. Хабаровск, корпус 2, ООО "Хостинг".
+      <br><br>
+      © 2022 – 2022 <a href="#" class="a_foot"> <b>Дом.ru</b></a>
+      <br><br>
+      <a href="#" class="a_foot"><b> Карта сайта</b></a>
+    </p>
+
+  </footer>
+
+</body>
+<script src="../script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-43e40abf.js"></script>
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-43e40abf.css" rel="stylesheet">
+
+</html>
