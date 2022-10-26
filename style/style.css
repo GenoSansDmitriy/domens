@@ -359,6 +359,7 @@ box-shadow: 2px 2px 5px black;
   max-width: 100%;
   padding: 10px;
   background-color: white; 
+  box-shadow: 2px 2px 5px black;
 }
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
@@ -399,6 +400,7 @@ box-shadow: 2px 2px 5px black;
   width: 50%;
   min-width: 300px;
   padding-right: 10%;
+  
 }
 .form-tvr h2{
   padding-bottom: 10px;
@@ -465,3 +467,5 @@ box-shadow: 2px 2px 5px black;
   color: #ff6607;
   font-weight: bold;
 }
+
+

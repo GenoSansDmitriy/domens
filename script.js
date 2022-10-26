@@ -1,65 +1,4 @@
-// const domens = [
-//   {
-//     name: '.ru',
-//     price: '149',
-//   },
-//   {
-//     name: '.com',
-//     price: '1020',
-//   },
-//   {
-//     name: '.net',
-//     price: '960',
-//   },
-//   {
-//     name: '.org',
-//     price: '1110',
-//   },
-//   {
-//     name: '.online',
-//     price: '280',
-//   },
-//   {
-//     name: '.shop',
-//     price: '500',
-//   },
-//   {
-//     name: '.club',
-//     price: '1470',
-//   },
-//   {
-//     name: '.website',
-//     price: '280',
-//   },
-//   {
-//     name: '.store',
-//     price: '280',
-//   },
-// ];
-
-// вариант 1
-// let dom = document.querySelector('#dom');
-// let price = document.querySelector('#price');
-
-// for (let i = 0; i < domens.length; i++){
-//   const item = domens[i];
-//   let
-//     itemname = item.name,
-//     itemprice = item.price;
-//     dom.innerHTML = itemname;
-//     price.innerHTML = `${itemprice} руб. `;
-// }
-
-// вариант 2
-// var out ='';
-// for(var key in domens){
-//   out+=domens[key].img + '</br>';
-//   out+=domens[key].name + '</br>';
-//   out+=domens[key].price + '</br>';
-// }
-// document.querySelector('#soldatic').innerHTML = out;
-
-
+// Закрытие и открытие========================================
 // Регистрация
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -140,10 +79,14 @@ function closeFormDom8() {
   document.getElementById("FormDom8").style.display = "none";
 }
 
-let sending = document.querySelector('#btn-sv'),
+// Форма связи========================================
+let 
+  sending = document.querySelector('#btn-sv'),
   username = document.querySelector('#name'),
   tel = document.querySelector('#tel'),
   mail = document.querySelector('#mail');
+
+
 sending.addEventListener('click', function () {
   if (username.value === '') {
     alert("Заполните поле имя")
@@ -151,8 +94,68 @@ sending.addEventListener('click', function () {
     alert("Заполните поле телефона")
   } else if (mail.value === '') {
     alert("Заполните поле e-mail")
+  }else{
+    alert("Благодарим за заявку, скоро мы с вами свяжемся!")
+    
+    localStorage.setItem('SVusername', username.value)
+    localStorage.setItem('SVtel', tel.value)
+    localStorage.setItem('SVemail', mail.value)
+
+    username.value = ""
+    tel.value = ""
+    mail.value = ""
   }
 })
+
+// Форма регистрации========================================
+let 
+  regmail = document.querySelector('#regmail'),
+  regpass = document.querySelector('#regpass'),
+  regbtn = document.querySelector('#regbtn'),
+  rand = Math.floor(Math.random() * 900000) + 100000;
+
+  regbtn.addEventListener('click', function () {
+    if (regmail.value === ""){
+    }else if(regpass.value === ""){
+    }else{
+      localStorage.setItem('id', JSON.stringify(rand))
+      localStorage.setItem('regmail', regmail.value)
+      localStorage.setItem('regpass', regpass.value)
+    }
+  })
+
+// localStorage.clear();
+
+
+//Поиск ========================================
+let
+  searchbar = document.querySelector('#searchbar'),
+  searchbtn = document.querySelector('#searchbtn');
+
+searchbtn.addEventListener('click', function(){
+  if(searchbar.value === ".ru"){
+    document.getElementById("FormDom").style.display = "block";
+  }else if(searchbar.value === ".com"){
+    document.getElementById("FormDom1").style.display = "block";
+  }else if(searchbar.value === ".net"){
+    document.getElementById("FormDom2").style.display = "block";
+  }else if(searchbar.value === ".org"){
+    document.getElementById("FormDom3").style.display = "block";
+  }else if(searchbar.value === ".online"){
+    document.getElementById("FormDom4").style.display = "block";
+  }else if(searchbar.value === ".shop"){
+    document.getElementById("FormDom5").style.display = "block";
+  }else if(searchbar.value === ".club"){
+    document.getElementById("FormDom6").style.display = "block";
+  }else if(searchbar.value === ".website"){
+    document.getElementById("FormDom7").style.display = "block";
+  }else if(searchbar.value === ".store"){
+    document.getElementById("FormDom8").style.display = "block";
+  }
+})
+
+
+
 
 
 

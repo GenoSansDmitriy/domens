@@ -43,14 +43,25 @@
   <img src="./style/foto/fon.jpg" class="fon_img">
 
   <main>
+    <!-- Строка поиска -->
     <p class="search_menu">
-      <input type="search" name="" placeholder="Поиск по сайту" class="search_bar">
-      <input type="submit" value="Найти" class="search_btn">
+      <input type="search" name="" placeholder="Поиск по сайту" class="search_bar" list="list" id="searchbar">
+      <input type="submit" value="Найти" class="search_btn" id="searchbtn">
     </p>
-
-  
+    <datalist id="list">
+      <option value=".ru"></option>
+      <option value=".com"></option>
+      <option value=".net"></option>
+      <option value=".org"></option>
+      <option value=".online"></option>
+      <option value=".shop"></option>
+      <option value=".club"></option>
+      <option value=".website"></option>
+      <option value=".store"></option>
+    </datalist>
+    
+    <!-- Товары -->
     <h1 class="popular_dom"><b> Популярные доменные зоны</b></h1>
-
     <!-- 1 -->
     <div class="popular_dom" >
       <a class="tvr_bar" onclick="open_dom()" >
@@ -253,10 +264,10 @@
     <div class="form-popup" id="myForm">
       <form action="#" class="form-container">
         <label for="email"><b>Почта</b></label>
-        <input type="text" placeholder="Ваша почта" name="email" required>
+        <input type="text" placeholder="Ваша почта" name="email" id="regmail" required>
         <label for="psw"><b>Пароль</b></label>
-        <input type="password" placeholder="Ваш пароль" name="psw" required>
-        <button  class="btn">Вход</button>
+        <input type="password" placeholder="Ваш пароль" name="psw" id="regpass" required>
+        <button  class="btn" id="regbtn">Вход</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
