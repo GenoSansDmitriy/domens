@@ -114,13 +114,23 @@ let
   regbtn = document.querySelector('#regbtn'),
   rand = Math.floor(Math.random() * 900000) + 100000;
 
+  const user = {
+    id:'',
+    regmail:'',
+    regpass:''
+  }
+
   regbtn.addEventListener('click', function () {
     if (regmail.value === ""){
     }else if(regpass.value === ""){
     }else{
-      localStorage.setItem('id', JSON.stringify(rand))
-      localStorage.setItem('regmail', regmail.value)
-      localStorage.setItem('regpass', regpass.value)
+      user.id = rand;
+      user.regmail = regmail.value;
+      user.regpass = regpass.value;
+      localStorage.setItem('user', JSON.stringify(user))
+      regmail.value = '';
+      regpass.value = '';
+      document.getElementById("myForm").style.display = "none";
     }
   })
 
