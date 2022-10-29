@@ -86,6 +86,11 @@ let
   tel = document.querySelector('#tel'),
   mail = document.querySelector('#mail');
 
+  const user_send = {
+    username:'',
+    tel:'',
+    mail:''
+  }
 
 sending.addEventListener('click', function () {
   if (username.value === '') {
@@ -96,10 +101,11 @@ sending.addEventListener('click', function () {
     alert("Заполните поле e-mail")
   }else{
     alert("Благодарим за заявку, скоро мы с вами свяжемся!")
-    
-    localStorage.setItem('SVusername', username.value)
-    localStorage.setItem('SVtel', tel.value)
-    localStorage.setItem('SVemail', mail.value)
+
+    user_send.username = username.value;
+    user_send.tel = tel.value;
+    user_send.mail = mail.value;
+    localStorage.setItem('user_send', JSON.stringify(user_send))
 
     username.value = ""
     tel.value = ""
