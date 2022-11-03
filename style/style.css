@@ -115,7 +115,7 @@ background-color: whitesmoke;
     color: whitesmoke;
     padding: 15px 30px;
   }
-  .topmenu1 li a:hover {color: #ff6607;}
+  .topmenu1 li a:hover {color: #ff6607; transition: 500ms;}
   .submenu-link1:after {
     font-family: "FontAwesome";
     color: inherit;
@@ -131,6 +131,7 @@ background-color: whitesmoke;
     transform: scaleY(0);
     transform-origin :0 0;
     transition: .5s ease-in-out;
+    padding-top: 2px;
   }
   .submenu1 a {
     color: whitesmoke;
@@ -177,6 +178,7 @@ footer{
 .a_foot:hover{
     color: #f4976c;
     text-shadow:  1px 1px 3px black ;
+    transition: 300ms;
 }
 .pay_foot{
 max-width: 35px;
@@ -198,6 +200,7 @@ max-height: 35px;
 .button_pay_foot:hover{
   color: #ff6607;
   background-color: #414f86;
+  transition: 500ms;
 }
 .button_pay_foot:active{
   margin-top: 2px;
@@ -230,7 +233,7 @@ max-height: 35px;
     color: whitesmoke;
     padding: 15px 30px;
   }
-  .topmenu li a:hover {color: #ff6607;}
+  .topmenu li a:hover {color: #ff6607; transition: 500ms;}
   .submenu-link:after {
     font-family: "FontAwesome";
     color: inherit;
@@ -246,6 +249,7 @@ max-height: 35px;
     transform: scaleY(0);
     transform-origin :0 0;
     transition: .5s ease-in-out;
+    padding-top: 2px ;
   }
   .submenu a {
     color: whitesmoke;

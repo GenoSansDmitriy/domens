@@ -94,13 +94,20 @@ let
 
 sending.addEventListener('click', function () {
   if (username.value === '') {
-    alert("Заполните поле имя")
+    username.style.border = '2px solid red';
+    username.placeholder = "Заполните поле имя"
   } else if (tel.value === '') {
-    alert("Заполните поле телефона")
+    tel.style.border = '2px solid red';
+    tel.placeholder = "Заполните поле телефона"
   } else if (mail.value === '') {
-    alert("Заполните поле e-mail")
+    mail.style.border = '2px solid red';
+    mail.placeholder = "Заполните поле e-mail"
   }else{
     alert("Благодарим за заявку, скоро мы с вами свяжемся!")
+
+    username.style.border = '2px solid black';
+    tel.style.border = '2px solid black';
+    mail.style.border = '2px solid black';
 
     user_send.username = username.value;
     user_send.tel = tel.value;
@@ -169,9 +176,3 @@ searchbtn.addEventListener('click', function(){
     document.getElementById("FormDom8").style.display = "block";
   }
 })
-
-
-
-
-
-
