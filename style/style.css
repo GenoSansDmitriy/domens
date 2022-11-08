@@ -18,6 +18,32 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+.menu-comp{
+  display: none;
+  margin-left: 64px;
+  color: black;
+}
+.menu-comp a{
+  margin-left: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all ease 230ms;
+}
+.menu-comp a:hover{
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
+}
+
+@media(min-width: 820px){
+  .topmenu1{
+    display: none;
+  }
+  .menu-comp{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
 input{
   border-radius: 0;
 }
